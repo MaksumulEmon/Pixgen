@@ -1,12 +1,34 @@
+// "use client";
+
+// import {Button, Spinner} from "@heroui/react";
+// import React from "react";
+
+// export function Loading() {
+//   return (
+//     <Button isPending>
+//       {({isPending}) => (
+//         <>
+//           {isPending ? <Spinner color="current" size="sm" /> : null}
+//           Uploading...
+//         </>
+//       )}
+//     </Button>
+//   );
+// }
+ "use client";
+import { Button, Spinner } from '@heroui/react';
 import React from 'react';
-import { FadeLoader } from 'react-spinners';
 
 const loading = () => {
     return (
-        <div className='text-center'>
-            {/* <FadeLoader /> */}
-            Loding...........
-        </div>
+        <Button isPending>
+            {({ isPending }) => (
+                <>
+                    {isPending ? <Spinner color="current" size="sm" /> : null}
+                    Uploading...
+                </>
+            )}
+        </Button>
     );
 };
 

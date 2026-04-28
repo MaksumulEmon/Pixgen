@@ -1,5 +1,6 @@
 import PhotoCard from '@/components/PhotoCard';
-import { getPhotos } from '@/lib/data';
+import { getPhotos } from '@/app/lib/data';
+import Image from 'next/image';
 import React from 'react';
 
 const PhotoDetailsPage = async ({ params }) => {
@@ -12,8 +13,11 @@ const PhotoDetailsPage = async ({ params }) => {
     console.log(photo);
     return (
         <div>
-            Details........
+
             <PhotoCard photo={photo}></PhotoCard>
+            
+
+    
         </div>
     );
 };

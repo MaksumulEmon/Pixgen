@@ -2,7 +2,7 @@ import React from 'react';
 import PhotoCard from './PhotoCard';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
-import { getPhotos } from '@/lib/data';
+import { getPhotos } from '@/app/lib/data';
 
 const TopGeneration = async () => {
 
