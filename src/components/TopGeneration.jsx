@@ -2,13 +2,17 @@ import React from 'react';
 import PhotoCard from './PhotoCard';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
+import { getPhotos } from '@/lib/data';
 
 const TopGeneration = async () => {
 
-    const res = await fetch("https://pixgen-fawn.vercel.app/data.json")
-    const photos = await res.json();
+    // const res = await fetch("https://pixgen-fawn.vercel.app/data.json")
+    // const photos = await res.json();
+
+    const photos = await getPhotos();
     console.log(photos)
     const topPhotos = photos.slice(0, 8)
+
     return (
         <div>
             <h1 className='font-bold text-2xl text-green-400'>Top Geration</h1>

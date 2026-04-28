@@ -40,7 +40,7 @@ const PhotoCard = ({ photo }) => {
                 </div>
             </div>
 
-            <Link href={`/all-photos/${photo.id}`}>      <Button variant="outline" className={'w-full'}>View</Button></Link>
+            <Link href={`/allPhotos/${photo.id}`}>      <Button variant="outline" className={'w-full'}>View</Button></Link>
 
         </Card>
     );
